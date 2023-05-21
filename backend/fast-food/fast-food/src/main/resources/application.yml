@@ -1,0 +1,25 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://it21048678:gamaged50@flavor-feed.kcivggn.mongodb.net/FlavorAPI?retryWrites=true&w=majority
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 5014057553-8gm9um6vnli3cle5rgigcdjpdrid14m9.apps.googleusercontent.com
+            clientSecret: tWZKVLxaD_ARWsriiiUFYoIk
+            redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
+            scope:
+              - email
+              - profile
+app:
+  auth:
+    tokenSecret: sdjeu3iuu8u3uu3ih3hu3u8u43uh2j2iu9ui2hurb2uhuhuy3u4kbwshfbjshffiui2ijk2neiu9u32iojbdjh29ru2ii42j4i2u94o2knd2iu4i2u4u2u442n4i2j4j
+    tokenExpirationMsec: 994000000
+  cors:
+    allowedOrigins: http://localhost:3000,http://localhost:8080
+  oauth2:
+    authorizedRedirectUris:
+      - http://localhost:3000/oauth2/redirect
